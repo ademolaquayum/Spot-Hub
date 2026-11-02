@@ -1,0 +1,5 @@
+<svg class="wf-stats-card-text-link-icon cl-icon cl-icon-external-link" data-cl-brand-show="hubspot-2025" xmlns="http://www.w3.org/2000/svg"><defs><symbol id="cl-icon-external-link" viewBox="0 0 32 32">
+  <path d="M13.31 20.69c-.29 0-.58-.11-.81-.33a1.14 1.14 0 0 1 0-1.62L27.04 4.2c.45-.45 1.17-.45 1.62 0s.45 1.17 0 1.62L14.12 20.36c-.22.22-.52.33-.81.33"></path><path d="M27.86 15.29c-.63 0-1.14-.51-1.14-1.14v-8h-8a1.14 1.14 0 1 1 0-2.28h9.14c.63 0 1.14.51 1.14 1.14v9.14c0 .63-.51 1.14-1.14 1.14M23.29 29H5c-.63 0-1.14-.51-1.14-1.14V9.57c0-.63.51-1.14 1.14-1.14h9.14a1.14 1.14 0 1 1 0 2.28h-8v16h16v-8a1.14 1.14 0 1 1 2.28 0v9.14c0 .63-.51 1.14-1.14 1.14Z"></path>
+</symbol></defs>
+                  <use href="#cl-icon-external-link"></use>
+                </svg>
