@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #33475b;
+    background: #fff;
+}
+
+.container {
+    width: 83%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Header */
+header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #33475b;
+}
+
+.logo span {
+    font-size: 30px;
+    font-weight: normal;
+    border-left: 2px solid #b5c2d1;
+    padding-left: 14px;
+}
+
+.header-links {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.header-links a {
+    color: #0091ae;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.incidents {
+    background: #425b76;
+    color: white !important;
+    padding: 15px 28px;
+    border-radius: 3px;
+}
+
+/* Main */
+main {
+    padding-top: 31px;
+}
+
+.status-banner {
+    background: #e5f7f6;
+    border: 1px solid #4fdacb;
+    border-radius: 5px;
+    padding: 22px 25px;
+    font-size: 25px;
+    margin-bottom: 90px;
+}
+
+.about {
+    margin-bottom: 88px;
+}
+
+.about h1 {
+    font-size: 35px;
+    font-weight: normal;
+    margin-bottom: 4px;
+}
+
+.about p {
+    color: #7c98b6;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/* Services */
+.services {
+    border: 1px solid #cbd6e2;
+    border-radius: 5px 5px 0 0;
+    overflow: visible;
+}
+
+.service {
+    min-height: 83px;
+    border-bottom: 1px solid #cbd6e2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+    font-size: 20px;
+}
+
+.service:last-child {
+    border-bottom: none;
+}
+
+.service-name {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.help {
+    width: 22px;
+    height: 22px;
+    border: 1px solid #cbd6e2;
+    border-radius: 50%;
+    font-size: 14px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: help;
+    position: relative;
+}
+
+.help:hover::after {
+    content: attr(data-tip);
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    background: #33475b;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 13px;
+    width: 200px;
+    z-index: 10;
+}
+
+.operational {
+    color: #00856a;
+    border: 1px solid #d3dfe9;
+    padding: 9px 10px;
+    font-size: 18px;
+}
+
+/* Footer */
+footer {
+    margin-top: 100px;
+    background: #33475b;
+    min-height: 350px;
+    color: #cbd6e2;
+    padding: 75px 20px 40px;
+    text-align: center;
+}
+
+.languages {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px 40px;
+    font-size: 20px;
+}
+
+.languages a,
+.footer-links a {
+    color: #cbd6e2;
+    text-decoration: none;
+}
+
+.footer-line {
+    max-width: 1060px;
+    margin: 58px auto 42px;
+    border-top: 1px solid #cbd6e2;
+}
+
+.footer-links {
+    max-width: 1060px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+    font-size: 18px;
+}
+
+/* Responsive layouts: desktop defaults, then progressively smaller screens. */
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+
+    .header-links {
+        gap: 48px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header {
+        height: auto;
+        padding: 20px 0;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .logo span {
+        font-size: 23px;
+    }
+
+    .header-links {
+        width: 100%;
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    .header-links a {
+        font-size: 14px;
+    }
+
+    .incidents {
+        padding: 12px;
+    }
+
+    .status-banner {
+        margin-bottom: 60px;
+        font-size: 21px;
+    }
+
+    .about {
+        margin-bottom: 55px;
+    }
+
+    .about h1 {
+        font-size: 28px;
+    }
+
+    .about p {
+        font-size: 16px;
+    }
+
+    .service {
+        min-height: 75px;
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .operational {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    footer {
+        margin-top: 70px;
+    }
+
+    .languages {
+        gap: 25px;
+        font-size: 16px;
+    }
+
+    .footer-links {
+        justify-content: center;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 94%;
+    }
+
+    .status-banner {
+        padding: 16px;
+        font-size: 18px;
+    }
+
+    .service {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .operational {
+        font-size: 12px;
+        padding: 7px;
+    }
+
+    .header-links {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+}
