@@ -21,6 +21,7 @@ header {
     height: 80px;
     display: flex;
     align-items: center;
+    margin-top: 5vh;
     justify-content: space-between;
 }
 
